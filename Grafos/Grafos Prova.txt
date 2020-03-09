@@ -1,0 +1,24 @@
+Grafo orientado ou dirigido: as arestas vão em apenas uma direção;
+Grafo desconexo: múltiplos segmentos distintos que não estão conectados por arestas;
+Subgrafo: grafos que são o resultado da remoção de vértices e arestas de um grafo;
+Subgrafo gerador: subgrafo formado por eliminação de arestas;
+Subgrafo induzido: 
+Ordem de um grafo: número de vértice. Ex: k1, k2, k3...;
+Grau de um vértice: número de arestas conectadas ao vértice;
+Ciclos: grafos que formam um anel. Todos os ciclos tem o mesmo numero de arestas e vertices;
+Grafos bipartidos: grafos com dois conjuntos distintos de vertices, onde as arestas ligam um membro de cada conjunto;
+Grafo planar: grafo que podem ser desenhados sem que haja cruzamento de arestas;
+Ciclo hamiltoniano: caminhos que visitam cada vértice exatamente uma única vez;
+Grafo simples: não possuem laços nem múltiplas arestas;
+Multigrafo: grafos com múltiplas arestas entre o mesmo par vértice;
+Ordem e tamanho: ordem é o número de vértices e tamanho é o número de arestas;
+Grafo k-regular: todo vértice tem grau k;
+Isomorfismo: 
+Grafo conexo: grafo onde é possível visitar qualquer vértice, partindo de um outro qualquer, passando pelas suas arestas;
+Passeio: sequência alternada de vértices e arestas adjacentes;
+Comprimento: número de arestas em um passeio;
+Passeio fechado: um passeio que começa e termina no mesmo vértice;
+Trilha: um passeio de v para w sem arestas repetidas;
+Caminho: um passeio de v para w sem vértices repetidos;
+Circuito: uma trilha fechada, ou seja, um passeio onde não há aresta repetida e os vértices inicial e final são idênticos;
+Grafo euleriano: um passeio em um grafo que atravessa cada aresta somente uma vez;

@@ -1,0 +1,44 @@
+SELECT LOWER(NM_VDD) AS NOME, VL_SAL AS SALARIO, (VL_SAL * 1.07)- VL_SAL AS REAJUSTE FROM VENDEDOR;
+lower: letra minuscula
+Upper: letra maiuscula
+as: apelido
+
+SELECT INITCAP(NM_VDD) AS NOME, VL_SAL AS SALARIO, (VL_SAL * 1.07)- VL_SAL AS REAJUSTE FROM VENDEDOR;
+Initicap: primeira letra maiuscula
+
+SELECT INITCAP(NM_VDD) AS NOME, VL_SAL AS SALARIO, (VL_SAL * 1.07)- VL_SAL AS "Salario Atualizado" FROM VENDEDOR;
+"Salario Atualizado: aspas duplas quando o nome nao tem "_"
+
+SELECT INITCAP(NM_VDD) FROM VENDEDOR V WHERE V.VL_SAL > 2000;
+V: apelido da tabela
+
+SELECT INITCAP(NM_VDD), VL_SAL, TRUNC((300+VL_SAL)*1.1+500/300,2) FROM VENDEDOR WHERE VL_SAL > 2000;
+Trunc: Limita as casas decimais do numero, no caso, em 2
+
+SELECT INITCAP(NM_VDD), VL_SAL, ROUND(((300+VL_SAL)*1.1+500)/300,0) FROM VENDEDOR WHERE VL_SAL > 2000;
+Round: arredondar numero
+
+SELECT CD_LOJ, CD_VEN, DT_VCTO, VL_PAGO, NVL(1,VL_PAGO)+500 FROM PARCELA WHERE VL_PAGO IS NULL
+NVL: Novo valor para a tabela
+
+SELECT NM_CLI||' RESIDE EM '||NM_CID FROM CLIENTE
+||: Concatena strings
+
+SELECT DISTINCT CD_VDD, CD_VEN FROM VENDA;
+Distinct: evita valores repetidos
+
+SELECT DISTINCT CD_VDD, CD_VEN FROM VENDA;
+Distinct: atua evitando repeticoes em toda a saida
+
+SELECT * FROM LOJA WHERE CD_LOJ IN (SELECT CD_LOJ FROM VENDA)
+In: seleciona de uma conjunto
+
+SELECT * FROM CLIENTE ORDER BY NM_CID
+SELECT * FROM CLIENTE ORDER BY NM_CID ASC
+SELECT * FROM CLIENTE ORDER BY NM_CID DESC
+Order By: ordena o resultado
+
+SELECT * FROM (TABELA A) A,(TABELA B) B
+Combina todos os registros da tabela a com todos os registros da tabela b
+
+

@@ -1,0 +1,28 @@
+Lista Encadeada
+
+Classe Nó
+	Atributo Elemento -> valor do elemento
+	Atributo Nó proximo (auto-referencia) -> referencia o próximo elemento
+
+Classe Lista
+	Atributo Nó inicio -> Definine o inicio da lista, inicia vazio.
+		       
+	Método Inserir -> Instância um novo objeto "Nó". 
+			  Recebe por parametro um valor que faz referencia ao atributo "Elemento".
+			  Atributo proximo do tipo Nó da nova instância recebe null.
+			  Verifica se o atributo inicio da classe Lista está null:
+				Se inicio for null, inicio será o objeto estanciado.
+				Se inicio for diferente de null:
+					Declara Nó auxiliar, essa variável recebe o atributo inicio da classe Lista.
+					Enquanto o Atributo "proximo" da variavel auxiliar for diferente de null, 
+					 a variavel auxiliar recebe o seu propio atributo "proximo".
+					
+			  
+	Método Retirar -> Declara variável auxiliar do tipo No, essa variavel recebe o valor do atributo inicio da classe Lista.
+			  Declara variavel referente ao elemento, ela irá receber o atributo "proximo" da variavel auxiliar.
+			  Metodo retorna o valor da variavel referente ao elemento.
+
+	Método Listar -> Verifica se o atributo inicio está nulo, 
+			 	Caso estiver, a lista está vazia
+				Caso não estiver, declara Nó auxiliar recebendo o valor do atributo inicio da classe Lista.
+					Enquanto o valor da variavel auxiliar or diferente de nulo variavel auxiliar vai receber seu propio atributo proximo.

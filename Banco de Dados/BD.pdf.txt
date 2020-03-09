@@ -1,0 +1,26 @@
+Server process: Processos que gerenciam cada conexão com o banco;
+Buffer Cache: Onde os registros são armazenados temporariamente via buffer para dar mais agilidade para o produto;
+Buffer: Guarda a instrução compactada (Que vai para o log);
+Shared pool: Guarda os comandos compilados;
+Backgronund processes: Processos do gerenciador. Ex.: Checkpoint (Atualiza o Data File com os dados do Buffer Cache);
+Control files:
+Data files: Onde os registros são armazenados em disco;
+Redo log files: Onde os arquivos de log são armazenados em disco;
+Nível Físico: Se preocupa como os dados estão armazenados fisicamente no disco, o espaço que o mesmo suporta;
+Nível Lógico: Se preocupa como os dados estão armazenados e os relacionamentos que existem;
+Nível de Visão: Descreve apenas parte do banco de dados;
+Instância: Coleção de informações armazenadas no BD em um determinado momento;
+Esquema: Projeto de banco de dados, incluindo as entidades e os relacionamentos entre estas: Esquema físico (Como o esquema conceitual foi implementado no banco), Esquema Conceitual, Sub-esquemas;
+Independência física: Habilidade de modificar o esquema físico sem implicar em reescrita das aplicações;
+Independência lógica: Habilidade de modificar o esquema conceitual sem implicar em reescrita das aplicações;
+
+DDL - Data Definition Language: Comandos que interagem com objetos do banco. Ex: CREATE, ALTER e DROP;
+DML - Data Manipulation Language: Comandos que interagem com os dados dentro das tabelas. Ex: INSERT, DELETE e UPDATE;
+DQL - Data Query Language: Comandos de consultas. Ex: SELECT;
+
+INDICE- Um índice é uma estrutura em disco associada a uma tabela ou view, que agiliza a recuperação das linhas procuradas. 
+	Um índice contém chaves criadas de uma ou mais colunas da tabela ou view. Essas chaves são armazenadas em uma estrutura (B-Tree) 
+	que habilita o SQL Server a localizar a linha ou as linhas associadas aos valores de chave de forma rápida e eficaz;
+
+
+

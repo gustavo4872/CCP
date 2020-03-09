@@ -1,0 +1,65 @@
+public static String formataDados(String dado){
+   return dado.replaceAll("[^0-9]+", "");
+}
+public static String formataDados(String dado){
+   dado = dado.replaceAll("\\.",""); 
+   return dado;
+}
+"[^0-9]+" retira tudo que não for numero
+"\\." retira pontos 
+"." retira tudo
+
+
+public String formataString(String texto, Integer indice) {
+		
+if (texto.length() > indice) {
+			
+texto.substring(0, indice);
+		
+} else if (texto.length() < indice) {
+			
+while (texto.length() < indice) {
+				
+texto = texto + " ";
+			
+}
+		
+}
+		
+return texto;
+	
+}
+
+
+String output1 = String.format("|%20d|", 93); // prints: 
+|                  93|
+
+	
+String output2 = String.format("|%020d|", 93); // prints: 
+|00000000000000000093|
+	
+	
+//DIREITA
+	
+String output3 = String.format("|%-20d|", 93); // prints: 
+|93                  |
+	
+	
+String output4 = String.format("|%0-20d|", 93); // prints: 
+|93000000000000000000|
+	
+	
+//VIRGULAS
+	
+String output5 = String.format("|%,d|", 10000000); 
+// prints: |10,000,000|
+	
+	
+//OCTAL
+	
+String output6 = String.format("|%o|", 93); // prints: 135 
+	
+	
+//HEXADECIMAL
+	
+String output7 = String.format("|%x|", 93); // prints: 5d

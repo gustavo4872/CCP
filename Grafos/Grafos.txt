@@ -1,0 +1,24 @@
+--Grafos--
+Grafo: Conjunto finito e não vazio de vértices;
+ordem: número de vértices;
+Grau: número de arestas;
+Ciclos: grafos com o mesmo número de arestas e vértices. Formam um único anel;
+Quantos grafos com n vértices?: 2^[(n²-n)/2];
+Grafos simples: não possuem laços nem múltiplas arestas;
+Grafo completo: todos os vértices estão conectados com os outros vértices;
+Isomorfismo de grados: grafos com o mesmo padrão de conexões. Mesmo número de vétices e graus, arestas..
+Vértice: Ímpar, se possui grau ímpar, par, se possui grau par. Caso grau 0, vértice isolado;
+Multigrafo: múltiplas arestas entre o mesmo par de vértices;
+Grafo valorado ou ponderado: grafos onde um número real é associado aos seus vértices e/ou arestas;
+
+>Se o grafo for conexo, só existe apenas um componente
+
+Passeio: Sequência alternada de vértices e arestas;
+Passeio Fechado: Passeio que começa e termina no mesmo vértice;
+Trilha: Passeio sem arestas repetidas;
+Caminho: Passeio sem vértices repetidos;
+Ciruito: Uma trilha fechada;
+
+--Subgrafo--
+subgrafo gerador: mantidos os vértices e retiradas as arestas de um grafo, o subgrafo resultante é chamado de subgrafo gerador;
+subgrafo induzido: retidaros os vértices, o subgrafo resultante é chamado de subgrado induzido;

@@ -1,0 +1,11 @@
+show running-config
+show interface se0/0/0  - interface uo
+		        line protocol up
+			interface down
+			- shutdow
+			- cabo
+			line protocol down
+			- velocidade errada
+			- protocolo errado
+ping 10.1.1.1
+traceroute 10.1.1.2

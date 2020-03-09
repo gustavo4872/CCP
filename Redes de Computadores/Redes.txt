@@ -1,0 +1,23 @@
+--Switch--
+enable
+config t
+vlan 10
+vlan 20
+interface fa0/1
+switchport acces vlan 10
+interface fa0/2 
+switchport acces vlan 20
+interface fa0/24
+switchport mode trunk
+
+--Router--
+enable
+config t
+interface gi0/0.10
+encapsulation dot1q 10
+ip address 192.168.10.254 255.255.255.0
+interface gi0/0.20
+encapsulation do1q 20
+ip address 192.168.20.254 255.255.255.0
+interface gi0/0
+no shutdown

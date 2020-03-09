@@ -1,0 +1,6 @@
+1 - top
+2 - ps
+3 - ps tree
+4 - kill [kill 3657 6785 3456]
+5 - killall e pkill
+6 - renice [renice novaprioridade -p PID]
