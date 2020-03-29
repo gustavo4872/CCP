@@ -1,0 +1,37 @@
+1.
+
+useradd	-d /home/vendatb Maria
+useradd	-d /home/vendatb Jane
+passwd Maria
+passwd Jane
+groupadd grupoSC
+usermod -a -G grupoSC Maria
+usermod -a -G grupoSC Jane
+
+1.1
+
+useradd -d /home/vendafloripa Angela
+useradd -d /home/vendafloripa Marcia
+passwd Angela
+passwd Marcia
+groupadd SCCapital
+usermod -a -G SCCapital Angela
+usermod -a -G SCCapital Marcia
+
+1.2
+
+cd /home/vendafloripa/
+cat > preços.txt
+Perfumes 85,00
+Hidratantes 30,00
+Loção Pós Barba 20,00
+Cremes faciais 45,00
+- ctrl+z -
+
+1.3
+
+chmod 755 preços.txt
+
+1.4
+
+cp preços.txt /home/vendatb/
